@@ -7,12 +7,11 @@
   <meta name="author" content="Habib Saine, Sumika Thapa">
   <meta property="og:title" content="Habib Saine & Sumika Thapa — Building Paycycle">
   <meta property="og:description" content="Student fintech that makes budgeting automatic. Built by two Business Analytics seniors joining RSM after graduation.">
-  <meta property="og:url" content="">
   <meta name="twitter:card" content="summary_large_image">
   <title>Habib Saine & Sumika Thapa</title>
   <link rel="stylesheet" href="styles/main.css">
   <style>
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fafafa; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; background: #f9f9f8; }
     #hero { min-height: 100vh; display: flex; align-items: center; }
   </style>
 </head>
@@ -29,12 +28,10 @@
           <li><a href="#skills" class="nav__link">Skills</a></li>
           <li><a href="#paycycle" class="nav__link">Paycycle</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
-          <li><a href="resume-habib.pdf" download class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Resume</a></li>
+          <li><a href="resume-habib.pdf" download class="nav__resume">Resume</a></li>
         </ul>
-        <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
@@ -42,250 +39,209 @@
 
   <main id="main">
 
-    <section id="hero" aria-label="Hero">
+    <!-- ─── HERO ───────────────────────────── -->
+    <section id="hero" aria-label="Introduction">
       <div class="container">
         <div class="hero__inner">
-          <div class="hero__content">
-            <span class="hero__label">University of Iowa · Tippie College of Business</span>
-            <h1 class="hero__title">
-              <span class="hero__names">Habib Saine<br>& Sumika Thapa</span>
-            </h1>
+
+          <div class="hero__content animate-on-scroll">
+            <span class="eyebrow hero__eyebrow">University of Iowa · Tippie College of Business</span>
+            <h1 class="hero__title">Habib Saine<br>&amp; Sumika Thapa</h1>
             <p class="hero__tagline">Building Paycycle — student fintech that makes budgeting automatic.</p>
-            <p class="hero__sub">Business Analytics & Information Systems seniors. Both joining RSM after graduation. Building the financial app we wish we'd had as freshmen.</p>
+            <p class="hero__sub">Business Analytics &amp; Information Systems seniors. Both joining RSM after graduation. Building the financial app we wish we'd had as freshmen.</p>
             <div class="hero__ctas">
               <a href="#paycycle" class="btn btn-primary">View Paycycle</a>
               <a href="resume-habib.pdf" download class="btn btn-secondary">Download Resume</a>
             </div>
           </div>
-          <div class="hero__photos">
-            <div class="hero__photo-pair">
-              <div class="hero__photo-wrap">
-                <picture>
-                  <img
-                    src="images/habib-headshot.jpg"
-                    alt="Habib Saine headshot"
-                    class="hero__photo"
-                    loading="eager"
-                    width="160"
-                    height="160"
-                  >
-                </picture>
-                <p class="hero__photo-name">Habib Saine</p>
-              </div>
-              <div class="hero__photo-wrap">
-                <picture>
-                  <img
-                    src="images/sumika-headshot.jpg"
-                    alt="Sumika Thapa headshot"
-                    class="hero__photo"
-                    loading="eager"
-                    width="160"
-                    height="160"
-                  >
-                </picture>
-                <p class="hero__photo-name">Sumika Thapa</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="section-header animate-on-scroll">
-          <span class="section-label">About Us</span>
-          <h2 class="section-title" id="about-heading">Two seniors, one product, one mission.</h2>
-          <p class="section-subtitle">We're turning a shared frustration with student finances into something real — and taking it with us into our careers at RSM.</p>
-        </div>
-        <div class="about__grid">
-          <div class="person-card animate-on-scroll delay-1">
+          <div class="hero__photos animate-on-scroll delay-2">
             <img
               src="images/habib-headshot.jpg"
               alt="Habib Saine"
-              class="person-card__photo"
-              loading="lazy"
-              width="96"
-              height="96"
+              class="hero__photo-a"
+              loading="eager"
+              width="220"
+              height="280"
             >
-            <h3 class="person-card__name">Habib Saine</h3>
-            <p class="person-card__role">Technology Risk Consulting · RSM Minneapolis</p>
-            <p class="person-card__bio">
-              From Gambia to Iowa City, Habib brings a global perspective to every system he builds. A Business Analytics & Information Systems major graduating December 2026, he's spent the past few years learning to bridge business strategy with technical execution — from SQL databases and Python pipelines to AI-assisted development workflows and audit-ready system architecture. At Paycycle, he leads backend development and system design.
-            </p>
-            <div style="margin-bottom: var(--space-md);">
-              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem;">
-                <div class="stat-card">
-                  <span class="stat-card__value">Dec '26</span>
-                  <span class="stat-card__label">Graduation</span>
-                </div>
-                <div class="stat-card">
-                  <span class="stat-card__value">BAIS</span>
-                  <span class="stat-card__label">Major</span>
-                </div>
-                <div class="stat-card">
-                  <span class="stat-card__value">MPLS</span>
-                  <span class="stat-card__label">RSM Office</span>
-                </div>
-              </div>
-            </div>
-            <div class="person-card__links">
-              <a href="https://www.linkedin.com/in/habibsaine/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Habib's LinkedIn profile">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                LinkedIn
-              </a>
-              <a href="mailto:habsaine@uiowa.edu" class="social-link" aria-label="Email Habib">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                Email
-              </a>
-            </div>
-          </div>
-
-          <div class="person-card animate-on-scroll delay-2">
+            <span class="hero__photo-caption hero__photo-caption--a">Habib Saine</span>
             <img
               src="images/sumika-headshot.jpg"
               alt="Sumika Thapa"
-              class="person-card__photo"
-              loading="lazy"
-              width="96"
-              height="96"
+              class="hero__photo-b"
+              loading="eager"
+              width="188"
+              height="242"
             >
-            <h3 class="person-card__name">Sumika Thapa</h3>
-            <p class="person-card__role">Microsoft D365 Finance & Supply Chain · RSM Chicago</p>
-            <p class="person-card__bio">
-              Sumika is a Dean's List double-major in Business Analytics & Information Systems and Ethics & Public Policy, graduating May 2027. She brings sharp analytical thinking, a background in marketing strategy, and a client-first mindset to everything she touches. At RSM Chicago, she'll be implementing Microsoft D365 Finance & Supply Chain systems. At Paycycle, she drives user research, product strategy, and business intelligence.
+            <span class="hero__photo-caption hero__photo-caption--b">Sumika Thapa</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ──────────────────────────── -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="about__intro animate-on-scroll">
+          <span class="eyebrow">About</span>
+          <h2 id="about-heading">Two seniors,<br>one product.</h2>
+          <p>We're turning a shared frustration with student finances into something real — and taking it with us into our careers at RSM.</p>
+        </div>
+
+        <div class="about__person animate-on-scroll">
+          <div>
+            <img
+              src="images/habib-headshot.jpg"
+              alt="Habib Saine"
+              class="about__photo"
+              loading="lazy"
+              width="480"
+              height="640"
+            >
+          </div>
+          <div class="about__content">
+            <h3 class="about__name">Habib Saine</h3>
+            <p class="about__role">Technology Risk Consulting · RSM Minneapolis</p>
+            <p class="about__bio">
+              From Gambia to Iowa City, Habib brings a global perspective to every system he builds. A Business Analytics &amp; Information Systems major graduating December 2026, he's spent the past few years learning to bridge business strategy with technical execution — from SQL databases and Python pipelines to AI-assisted development workflows and audit-ready system architecture. At Paycycle, he leads backend development and system design.
             </p>
-            <div style="margin-bottom: var(--space-md);">
-              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem;">
-                <div class="stat-card">
-                  <span class="stat-card__value">May '27</span>
-                  <span class="stat-card__label">Graduation</span>
-                </div>
-                <div class="stat-card">
-                  <span class="stat-card__value">3.5+</span>
-                  <span class="stat-card__label">GPA</span>
-                </div>
-                <div class="stat-card">
-                  <span class="stat-card__value">CHI</span>
-                  <span class="stat-card__label">RSM Office</span>
-                </div>
-              </div>
+            <div class="about__meta">
+              <strong>At a Glance</strong>
+              Graduating December 2026 · Business Analytics &amp; IS · University of Iowa<br>
+              RSM Technology Risk Consulting · Minneapolis, MN · Starting June 2026
             </div>
-            <div class="person-card__links">
-              <a href="https://www.linkedin.com/in/sumika-thapa-30a0562b5/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Sumika's LinkedIn profile">
+            <div class="about__links">
+              <a href="https://www.linkedin.com/in/habibsaine/" target="_blank" rel="noopener noreferrer" class="about__link" aria-label="Habib's LinkedIn">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                 LinkedIn
               </a>
-              <a href="mailto:sumika-thapa@uiowa.edu" class="social-link" aria-label="Email Sumika">
+              <a href="mailto:habsaine@uiowa.edu" class="about__link" aria-label="Email Habib">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                Email
+                habsaine@uiowa.edu
               </a>
             </div>
           </div>
         </div>
+
+        <div class="about__person about__person--reverse animate-on-scroll">
+          <div>
+            <img
+              src="images/sumika-headshot.jpg"
+              alt="Sumika Thapa"
+              class="about__photo"
+              loading="lazy"
+              width="480"
+              height="640"
+            >
+          </div>
+          <div class="about__content">
+            <h3 class="about__name">Sumika Thapa</h3>
+            <p class="about__role">Microsoft D365 Finance &amp; Supply Chain · RSM Chicago</p>
+            <p class="about__bio">
+              Sumika is a Dean's List double-major in Business Analytics &amp; Information Systems and Ethics &amp; Public Policy, graduating May 2027. She brings sharp analytical thinking, a background in marketing strategy, and a client-first mindset to everything she touches. At RSM Chicago, she'll implement Microsoft D365 Finance &amp; Supply Chain systems. At Paycycle, she drives user research, product strategy, and business intelligence.
+            </p>
+            <div class="about__meta">
+              <strong>At a Glance</strong>
+              Graduating May 2027 · BAIS + Ethics &amp; Public Policy · GPA 3.5+ · Dean's List<br>
+              RSM Microsoft D365 Finance &amp; Supply Chain · Chicago, IL · Starting Summer 2026
+            </div>
+            <div class="about__links">
+              <a href="https://www.linkedin.com/in/sumika-thapa-30a0562b5/" target="_blank" rel="noopener noreferrer" class="about__link" aria-label="Sumika's LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="mailto:sumika-thapa@uiowa.edu" class="about__link" aria-label="Email Sumika">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                sumika-thapa@uiowa.edu
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
+    <!-- ─── SKILLS ─────────────────────────── -->
     <section id="skills" aria-labelledby="skills-heading">
       <div class="container">
-        <div class="section-header animate-on-scroll">
-          <span class="section-label">Skills & Expertise</span>
-          <h2 class="section-title" id="skills-heading">What we bring to the table.</h2>
-          <p class="section-subtitle">A complementary skill set that covers the full stack of product development — from backend architecture to business intelligence.</p>
+
+        <div class="skills__intro animate-on-scroll">
+          <span class="eyebrow">Skills &amp; Expertise</span>
+          <h2 id="skills-heading">What we bring.</h2>
+          <p>A complementary skill set covering the full stack of product development — from backend architecture to business intelligence.</p>
         </div>
 
-        <div class="skills__areas">
-          <div class="skills__area animate-on-scroll delay-1">
-            <div class="skills__area-icon">📊</div>
-            <h3 class="skills__area-title">Business Analytics</h3>
-            <div class="skill-list">
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">Data Wrangling</span>
-              <span class="skill-pill">Excel / PivotTables</span>
-              <span class="skill-pill">Power BI</span>
-              <span class="skill-pill">Tableau</span>
-              <span class="skill-pill">Data Modeling</span>
-            </div>
+        <div class="skills__table animate-on-scroll delay-1">
+          <div class="skills__row">
+            <span class="skills__category">Business Analytics</span>
+            <span class="skills__items">Python · SQL · Data Wrangling · Excel / PivotTables · Power BI · Tableau · Data Modeling</span>
           </div>
-          <div class="skills__area animate-on-scroll delay-2">
-            <div class="skills__area-icon">🚀</div>
-            <h3 class="skills__area-title">Product Development</h3>
-            <div class="skill-list">
-              <span class="skill-pill">User Research</span>
-              <span class="skill-pill">Wireframing</span>
-              <span class="skill-pill">Prototyping</span>
-              <span class="skill-pill">Agile / Sprints</span>
-              <span class="skill-pill">Figma</span>
-              <span class="skill-pill">Sprint Planning</span>
-            </div>
+          <div class="skills__row">
+            <span class="skills__category">Product Development</span>
+            <span class="skills__items">User Research · Wireframing · Prototyping · Agile Methodology · Figma · Sprint Planning</span>
           </div>
-          <div class="skills__area animate-on-scroll delay-3">
-            <div class="skills__area-icon">💳</div>
-            <h3 class="skills__area-title">Financial Technology</h3>
-            <div class="skill-list">
-              <span class="skill-pill">Plaid API</span>
-              <span class="skill-pill">Budget Automation</span>
-              <span class="skill-pill">Event Sourcing</span>
-              <span class="skill-pill">Flask / Backend</span>
-              <span class="skill-pill">Microsoft D365</span>
-            </div>
+          <div class="skills__row">
+            <span class="skills__category">Financial Technology</span>
+            <span class="skills__items">Plaid API · Budget Automation · Event Sourcing Architecture · Flask · Microsoft D365</span>
+          </div>
+          <div class="skills__row">
+            <span class="skills__category">Project Management</span>
+            <span class="skills__items">Agile / Scrum · Cross-functional Collaboration · Documentation · Process Optimization</span>
           </div>
         </div>
 
-        <div class="skills__individual">
-          <div class="skills__person animate-on-scroll delay-1">
-            <p class="skills__person-name">Habib's Focus</p>
-            <p class="skills__person-role">Technology Risk & Backend</p>
-            <div class="skill-list">
-              <span class="skill-pill">Technology Risk (ITGC, SOX, SOC2)</span>
-              <span class="skill-pill">Backend Architecture</span>
-              <span class="skill-pill">System Design</span>
-              <span class="skill-pill">AI-Assisted Workflows</span>
-              <span class="skill-pill">Audit Automation</span>
-              <span class="skill-pill">Compliance</span>
+        <div class="skills__individual animate-on-scroll delay-2">
+          <div class="skills__person">
+            <p class="skills__person-name">Habib</p>
+            <p class="skills__person-label">Technology Risk &amp; Backend Architecture</p>
+            <div class="skills__focus-items">
+              <span class="skills__focus-item">Technology Risk — ITGC, SOX, SOC2</span>
+              <span class="skills__focus-item">Backend Development &amp; System Architecture</span>
+              <span class="skills__focus-item">AI-Assisted Development Workflows</span>
+              <span class="skills__focus-item">Audit Automation &amp; Compliance Systems</span>
             </div>
           </div>
-          <div class="skills__person animate-on-scroll delay-2">
-            <p class="skills__person-name">Sumika's Focus</p>
-            <p class="skills__person-role">ERP Systems & Analytics</p>
-            <div class="skill-list">
-              <span class="skill-pill">Microsoft D365 Finance</span>
-              <span class="skill-pill">Supply Chain</span>
-              <span class="skill-pill">Business Intelligence</span>
-              <span class="skill-pill">Marketing Strategy</span>
-              <span class="skill-pill">Client Relations</span>
-              <span class="skill-pill">Process Optimization</span>
+          <div class="skills__person">
+            <p class="skills__person-name">Sumika</p>
+            <p class="skills__person-label">ERP Systems &amp; Business Intelligence</p>
+            <div class="skills__focus-items">
+              <span class="skills__focus-item">Microsoft D365 Finance &amp; Supply Chain</span>
+              <span class="skills__focus-item">Data Analysis &amp; Business Intelligence</span>
+              <span class="skills__focus-item">Marketing Strategy &amp; Client Relations</span>
+              <span class="skills__focus-item">ERP Configuration &amp; Process Optimization</span>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- ─── PAYCYCLE ───────────────────────── -->
     <section id="paycycle" aria-labelledby="paycycle-heading">
       <div class="container">
-        <div class="section-header animate-on-scroll">
-          <span class="section-label">Featured Project</span>
-          <h2 class="section-title" id="paycycle-heading">Paycycle</h2>
-          <p class="section-subtitle">Student fintech that makes budgeting automatic. Built for BAIS:3300 Digital Product Management — and for every student who's ever overspent right after payday.</p>
+
+        <div class="paycycle__intro animate-on-scroll">
+          <span class="paycycle__eyebrow">Featured Project</span>
+          <h2 class="paycycle__heading" id="paycycle-heading">Paycycle</h2>
+          <p class="paycycle__subhead">Student fintech that makes budgeting automatic. Built for BAIS:3300 — and for every student who's ever overspent right after payday.</p>
         </div>
 
         <div class="paycycle__layout">
           <div>
-            <div class="paycycle__card animate-on-scroll" style="margin-bottom: var(--space-lg);">
-              <p class="paycycle__card-title">The Problem</p>
-              <p>College students face a fundamental mismatch: income arrives unpredictably — work-study paychecks, side gigs, internship stipends — but fixed expenses like rent and meal plans don't wait. Traditional budgeting apps assume steady income, leaving students to manually track and protect money earmarked for bills. The result? Overspending in the days after payday, then scrambling when rent is due.</p>
+            <div class="paycycle__block animate-on-scroll">
+              <span class="paycycle__block-label">The Problem</span>
+              <p>College students face a fundamental mismatch: income arrives unpredictably — work-study paychecks, side gigs, internship stipends — but fixed expenses like rent and meal plans don't wait. Traditional budgeting apps assume steady income, leaving students to manually track and protect money earmarked for bills.</p>
+              <p>The result? Overspending in the days after payday, then scrambling when rent is due.</p>
             </div>
-            <div class="paycycle__card animate-on-scroll delay-1">
-              <p class="paycycle__card-title">Our Solution</p>
+            <div class="paycycle__block animate-on-scroll delay-1">
+              <span class="paycycle__block-label">Our Solution</span>
               <p>Paycycle automatically detects when money hits your account, allocates it to your predefined budget categories — rent, groceries, savings — and locks those funds from your "available to spend" balance. It's not about tracking where your money went. It's about making sure it goes where it needs to, before you have a chance to spend it.</p>
-              <p style="margin-top: var(--space-md);">
-                This isn't just a class project. It's a product we wish we'd had as freshmen, built using everything we've learned in Business Analytics — from data architecture to user-centered design.
-              </p>
+              <p>This isn't just a class project. It's a product we wish we'd had as freshmen.</p>
             </div>
-
-            <div style="margin-top: var(--space-xl);" class="animate-on-scroll delay-2">
-              <p class="paycycle__card-title" style="color: rgba(255,255,255,0.5); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-sm);">Tech Stack</p>
+            <div class="paycycle__block animate-on-scroll delay-2">
+              <span class="paycycle__block-label">Tech Stack</span>
               <div class="paycycle__stack">
                 <span class="paycycle__tag">Python</span>
                 <span class="paycycle__tag">Flask</span>
@@ -294,38 +250,38 @@
                 <span class="paycycle__tag">Figma</span>
                 <span class="paycycle__tag">Agile / Sprints</span>
               </div>
-            </div>
-
-            <div class="paycycle__ctas animate-on-scroll delay-3">
-              <span class="btn btn-outline-white" style="cursor: default;" aria-label="Private development repository">🔒 Private Repository</span>
+              <div class="paycycle__private">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Private Development Repository
+              </div>
             </div>
           </div>
 
           <div>
             <div class="paycycle__features animate-on-scroll delay-1">
               <div class="paycycle__feature">
-                <div class="paycycle__feature-icon">🏦</div>
+                <span class="paycycle__feature-num">01</span>
                 <div>
                   <p class="paycycle__feature-title">Plaid Integration</p>
                   <p class="paycycle__feature-desc">Instant income detection across bank accounts. The moment money hits your account, Paycycle knows about it.</p>
                 </div>
               </div>
               <div class="paycycle__feature">
-                <div class="paycycle__feature-icon">🔒</div>
+                <span class="paycycle__feature-num">02</span>
                 <div>
                   <p class="paycycle__feature-title">Automatic Budget Protection</p>
                   <p class="paycycle__feature-desc">Funds allocated the moment they arrive. Your rent money is never in your "available to spend" balance.</p>
                 </div>
               </div>
               <div class="paycycle__feature">
-                <div class="paycycle__feature-icon">💡</div>
+                <span class="paycycle__feature-num">03</span>
                 <div>
                   <p class="paycycle__feature-title">Contextual Insights</p>
                   <p class="paycycle__feature-desc">Smart notifications surfaced based on your actual spending patterns, not generic advice.</p>
                 </div>
               </div>
               <div class="paycycle__feature">
-                <div class="paycycle__feature-icon">🎓</div>
+                <span class="paycycle__feature-num">04</span>
                 <div>
                   <p class="paycycle__feature-title">Student-First Design</p>
                   <p class="paycycle__feature-desc">Built for irregular income from work-study, side gigs, and stipends — not 9-to-5 paychecks.</p>
@@ -333,133 +289,118 @@
               </div>
             </div>
 
-            <div class="paycycle__card animate-on-scroll delay-2" style="margin-top: var(--space-xl);">
-              <p class="paycycle__card-title">Build Status</p>
+            <div class="paycycle__block animate-on-scroll delay-2">
+              <span class="paycycle__block-label">Build Status</span>
               <div class="paycycle__status">
-                <div class="paycycle__status-item">
-                  <span class="paycycle__status-dot paycycle__status-dot--done"></span>
-                  User research & problem validation
+                <div class="paycycle__status-row">
+                  <span class="paycycle__dot paycycle__dot--done"></span>
+                  User research &amp; problem validation
                 </div>
-                <div class="paycycle__status-item">
-                  <span class="paycycle__status-dot paycycle__status-dot--done"></span>
-                  Technical architecture (event sourcing ledger)
+                <div class="paycycle__status-row">
+                  <span class="paycycle__dot paycycle__dot--done"></span>
+                  Technical architecture — event sourcing ledger
                 </div>
-                <div class="paycycle__status-item">
-                  <span class="paycycle__status-dot paycycle__status-dot--done"></span>
+                <div class="paycycle__status-row">
+                  <span class="paycycle__dot paycycle__dot--done"></span>
                   Plaid sandbox integration working
                 </div>
-                <div class="paycycle__status-item">
-                  <span class="paycycle__status-dot paycycle__status-dot--progress"></span>
-                  Building core budget allocation engine
+                <div class="paycycle__status-row">
+                  <span class="paycycle__dot paycycle__dot--progress"></span>
+                  Core budget allocation engine
                 </div>
-                <div class="paycycle__status-item">
-                  <span class="paycycle__status-dot paycycle__status-dot--planned"></span>
+                <div class="paycycle__status-row">
+                  <span class="paycycle__dot paycycle__dot--planned"></span>
                   Beta testing — April 2026
                 </div>
               </div>
             </div>
-
-            <div class="paycycle__card animate-on-scroll delay-3" style="margin-top: var(--space-lg);">
-              <p class="paycycle__card-title">Development Approach</p>
-              <p>Built for BAIS:3300 Digital Product Management using agile methodology with weekly sprints. Started with 20+ student interviews to validate the problem, moved through wireframing and prototyping in Figma, and are now in active development. Architecture decision: balance is always a calculation, never a stored value — integrity by design.</p>
-            </div>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- ─── CONTACT ────────────────────────── -->
     <section id="contact" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="section-header animate-on-scroll">
-          <span class="section-label">Contact</span>
-          <h2 class="section-title" id="contact-heading">Let's connect.</h2>
-          <p class="section-subtitle">Recruiters, collaborators, and fellow builders — we'd love to hear from you.</p>
+
+        <div class="contact__intro animate-on-scroll">
+          <span class="eyebrow">Contact</span>
+          <h2 id="contact-heading">Let's connect.</h2>
+          <p>Recruiters, collaborators, and fellow builders — we'd love to hear from you.</p>
         </div>
 
         <div class="contact__grid">
-          <div class="contact__person animate-on-scroll delay-1">
-            <div class="contact__person-header">
-              <img
-                src="images/habib-headshot.jpg"
-                alt="Habib Saine"
-                class="contact__photo"
-                loading="lazy"
-                width="64"
-                height="64"
-              >
-              <div>
-                <p class="contact__name">Habib Saine</p>
-                <p class="contact__role">Technology Risk Consulting · RSM Minneapolis</p>
-              </div>
-            </div>
+          <div class="animate-on-scroll delay-1">
+            <img
+              src="images/habib-headshot.jpg"
+              alt="Habib Saine"
+              class="contact__person-photo"
+              loading="lazy"
+              width="72"
+              height="72"
+            >
+            <p class="contact__person-name">Habib Saine</p>
+            <p class="contact__person-role">Technology Risk Consulting<br>RSM Minneapolis · Starting June 2026</p>
             <div class="contact__links">
               <a href="https://www.linkedin.com/in/habibsaine/" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="Habib's LinkedIn profile">
-                <span class="contact__link-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </span>
-                <div>
-                  <p class="contact__link-label">LinkedIn</p>
-                  <p class="contact__link-value">linkedin.com/in/habibsaine</p>
+                <div class="contact__link-left">
+                  <span class="contact__link-type">LinkedIn</span>
+                  <span class="contact__link-value">linkedin.com/in/habibsaine</span>
                 </div>
+                <span class="contact__link-arrow" aria-hidden="true">↗</span>
               </a>
               <a href="mailto:habsaine@uiowa.edu" class="contact__link" aria-label="Email Habib">
-                <span class="contact__link-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </span>
-                <div>
-                  <p class="contact__link-label">Email</p>
-                  <p class="contact__link-value">habsaine@uiowa.edu</p>
+                <div class="contact__link-left">
+                  <span class="contact__link-type">Email</span>
+                  <span class="contact__link-value">habsaine@uiowa.edu</span>
                 </div>
+                <span class="contact__link-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
 
-          <div class="contact__person animate-on-scroll delay-2">
-            <div class="contact__person-header">
-              <img
-                src="images/sumika-headshot.jpg"
-                alt="Sumika Thapa"
-                class="contact__photo"
-                loading="lazy"
-                width="64"
-                height="64"
-              >
-              <div>
-                <p class="contact__name">Sumika Thapa</p>
-                <p class="contact__role">Microsoft D365 Finance & Supply Chain · RSM Chicago</p>
-              </div>
-            </div>
+          <div class="animate-on-scroll delay-2">
+            <img
+              src="images/sumika-headshot.jpg"
+              alt="Sumika Thapa"
+              class="contact__person-photo"
+              loading="lazy"
+              width="72"
+              height="72"
+            >
+            <p class="contact__person-name">Sumika Thapa</p>
+            <p class="contact__person-role">Microsoft D365 Finance &amp; Supply Chain<br>RSM Chicago · Starting Summer 2026</p>
             <div class="contact__links">
               <a href="https://www.linkedin.com/in/sumika-thapa-30a0562b5/" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="Sumika's LinkedIn profile">
-                <span class="contact__link-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </span>
-                <div>
-                  <p class="contact__link-label">LinkedIn</p>
-                  <p class="contact__link-value">linkedin.com/in/sumika-thapa-30a0562b5</p>
+                <div class="contact__link-left">
+                  <span class="contact__link-type">LinkedIn</span>
+                  <span class="contact__link-value">linkedin.com/in/sumika-thapa-30a0562b5</span>
                 </div>
+                <span class="contact__link-arrow" aria-hidden="true">↗</span>
               </a>
               <a href="mailto:sumika-thapa@uiowa.edu" class="contact__link" aria-label="Email Sumika">
-                <span class="contact__link-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </span>
-                <div>
-                  <p class="contact__link-label">Email</p>
-                  <p class="contact__link-value">sumika-thapa@uiowa.edu</p>
+                <div class="contact__link-left">
+                  <span class="contact__link-type">Email</span>
+                  <span class="contact__link-value">sumika-thapa@uiowa.edu</span>
                 </div>
+                <span class="contact__link-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="resume-section animate-on-scroll">
-          <h3>Download Habib's Resume</h3>
-          <p>Technology Risk Consulting focus — ITGC, SOX, SOC2, and AI-assisted development workflows.</p>
+        <div class="contact__resume animate-on-scroll">
+          <div class="contact__resume-text">
+            <h3>Habib's Resume</h3>
+            <p>Technology Risk Consulting focus — ITGC, SOX, SOC2, and AI-assisted development.</p>
+          </div>
           <a href="resume-habib.pdf" download class="btn btn-primary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Resume (PDF)
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
           </a>
         </div>
+
       </div>
     </section>
 
@@ -467,7 +408,7 @@
 
   <footer>
     <div class="footer__inner">
-      <p class="footer__copy">© 2026 Habib Saine & Sumika Thapa · University of Iowa</p>
+      <p class="footer__copy">© 2026 Habib Saine &amp; Sumika Thapa</p>
       <nav class="footer__links" aria-label="Footer navigation">
         <a href="#about" class="footer__link">About</a>
         <a href="#skills" class="footer__link">Skills</a>
